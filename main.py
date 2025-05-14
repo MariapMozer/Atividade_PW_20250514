@@ -5,6 +5,7 @@ import uvicorn
 
 from data import produto_repo
 from data import cliente_repo
+from data import categoria_repo
 
 
 app = FastAPI()
@@ -13,6 +14,7 @@ templates = Jinja2Templates(directory="templates")
 
 produto_repo.criar_tabela()
 cliente_repo.criar_tabela()
+categoria_repo.criar_tabela()
 
 
 @app.get("/")
