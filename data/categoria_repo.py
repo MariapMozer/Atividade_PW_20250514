@@ -1,4 +1,4 @@
-from data.cliente_model import Categoria
+from data.categoria_model import Categoria
 from data.categoria_sql import *
 from data.util import get_connection
 
